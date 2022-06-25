@@ -1,0 +1,401 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	height: 100vh;
+}
+
+* :focus {
+	outline: none;
+}
+
+.bagnav {
+	height: 55px;
+
+	width: 100%;
+	justify-content: center;
+}
+
+.bagnav > .innernav {
+	width: 80%;
+	height: 100%;
+	/* color: yellow; */
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.innerNav .logoimg {
+	overflow: hidden;
+}
+
+.logoimg > img {
+	max-height: 55px;
+}
+
+.account {
+	height: 100%;
+	align-items: center;
+	display: flex;
+}
+.account .button {
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-right: 8px;
+}
+.account .material-icons {
+	color: rgb(255, 54, 148);
+}
+
+.checkout-parent {
+	height: 55px;
+	width: 100%;
+	justify-content: center;
+	background-color: #0092df;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.checkout-parent > .innerbox {
+	width: 80%;
+	height: 100%;
+	color: white;
+	margin: auto;
+	align-items: center;
+}
+.innerbox > .chekout-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.innerbox > .chekout-text > span {
+	font-weight: 800;
+	font-size: x-large;
+	display: block;
+	margin-top: 12px;
+}
+.main {
+	display: flex;
+	/* height: 80vh; */
+	width: 80%;
+	/* border: 1px solid black; */
+	margin: auto;
+	margin-top: 2rem;
+}
+
+.main .main-left {
+	width: 65%;
+	height: 100%;
+	/* border: 2px solid yellow; */
+}
+
+.main .main-right {
+	width: 35%;
+	height: 100%;
+	/* border: 2px solid cyan; */
+}
+
+.main-left .total-amount-div {
+	height: 25px;
+	width: 70%;
+	/* border: 1px solid #0092df; */
+	text-align: center;
+	align-items: center;
+	display: flex;
+	font-weight: 700;
+	margin-bottom: 28px;
+	/* letter-spacing: 1px; */
+}
+.main-left .total-amount-div p {
+	margin-left: 12px;
+}
+
+.main-left .total-amount-div h3 {
+	margin-left: auto;
+}
+.main-left .payment-method-top {
+	width: 100%;
+	height: 27px;
+	/* border: 1px solid black; */
+	display: flex;
+	height: 27px;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+.main-left .payment-method-top p {
+	margin-left: 12px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+}
+
+.main-left .payment-method-bottom {
+	height: 300px;
+	width: 100%;
+}
+/* 
+.main-left .payment-method-bottom .pay-choice {
+	display: flex;
+	height: 25px;
+	width: 100%;
+	margin-top: 2rem;
+}
+.payment-method-bottom .pay-choice span {
+	height: 1rem;
+	width: 1rem;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: relative;
+}
+.payment-method-bottom .pay-choice p {
+	margin-left: 12px;
+}
+
+.pay-choice span:target {
+	content: "";
+	display: block;
+	height: 0.5rem;
+	width: 0.5rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #55c57a; */
+/* opacity: 0;
+	transition: opacity 0.2s; */
+/* } */
+form p {
+	margin-top: 38px;
+	font-size: 18px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid black;
+	border-radius: 100%;
+	background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: rgb(255, 54, 148);
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-radius: 100%;
+}
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+}
+[type="radio"]:checked + label:after {
+	opacity: 1;
+}
+
+.main-right > .overview {
+	width: 85%;
+	min-height: 250px;
+	background-color: #f2f2f2;
+	margin: auto;
+	margin-top: 28px;
+	padding: 18px 28px;
+}
+
+.main-right > .overview div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 18px;
+}
+
+.overview hr {
+	margin-top: 12px;
+	border-top: 2px solid black;
+	display: block;
+}
+.overview #overview-text,
+#total-text {
+	font-weight: 600;
+}
+.overview .discount-div {
+	color: rgb(255, 54, 148);
+}
+.button-div {
+	margin: auto;
+	margin-top: 18px;
+	width: 85%;
+}
+
+#address-button2 {
+	width: 100%;
+	height: 49px;
+	margin: auto;
+	background-color: rgb(255, 54, 148);
+	color: white;
+	font-size: large;
+	font-weight: 800;
+	letter-spacing: 1px;
+	border: none;
+	cursor: pointer;
+}
+#address-button2:hover {
+	background-color: rgb(243, 8, 117);
+}
+
+.footer {
+	margin-top: 90px;
+	margin-bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #f3f3f3;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.footer-child {
+	width: 80%;
+	display: flex;
+}
+.footer-child-left {
+	display: flex;
+	margin-left: 12%;
+}
+.footer-child-left>div {
+	margin-top: 10px;
+	margin-right: 25px;
+	
+}
+.footer-child-right{
+	margin-left: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-child-right p{
+	font-size: 0.78rem;
+	letter-spacing: 1px;
+}
+
+.footer-child-right hr{
+	border: none;
+	border-left: 1px solid;
+	height: 19px;
+	width: 1px;
+	margin: 1rem;
+}
+#debitCardDiv{
+	display: none;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+#cardlength{
+	width: 250px; height: 30px; font-size: 18px;margin-bottom: 15px;margin-top: 5px;
+}#cardname{
+	height: 30px;
+	width: 250px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#cardcvv{
+	height: 25px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+#date{
+	margin-bottom: 25px;
+}
+#date input{
+	width: 80px;
+}
+/* #debitCardDiv input{
+	margin-bottom: 15px;
+	margin-top: 5px;
+	
+} */
+#debit{
+	margin-top: 15px;
+}
+
+#debitCardDiv label{
+	font-size: 15px;
+	color: gray;
+}
+
+
+#upidata{
+	display: none;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+#upidata label{
+	font-size: 15px;
+	color: gray;
+}
+#upidata input{
+	height: 30px;
+}
+#netbankData{
+	display: none;
+	margin-top: 10px;
+	margin-left: 45px;
+	
+}
+
+#netbankData>img{
+	
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	padding: 3px;
+	border: 5x solid black;
+}
+#paymwallet{
+	display: none;
+	margin-left: 45px;
+	margin-top: 10px;
+}
+#paymwallet input{
+	margin-top: 5px;
+	height: 25px;
+}
+#paymwallet p{
+	font-size: 15px;
+	color: gray;
+}
+
+li{
+	list-style: none;
+	margin-bottom: 15px;
+}

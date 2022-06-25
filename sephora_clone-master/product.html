@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>api</title>
+		<link rel="stylesheet" href="./style/product.css" />
+		<link rel="stylesheet" href="footer.css" />
+		<link
+			rel="shortcut icon"
+			href="https://static.nnnow.com/client/assets/images/favicon.ico"
+		/>
+
+		<link rel="stylesheet" href="./style/footer.css">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/navbar.css" />
+		<link rel="stylesheet" href="./style/sidebar.css" />
+		<link rel="stylesheet" href="./style/stickynav.css" />
+	</head>
+	<body>
+		<div id="component"></div>
+		<div id="sort_div">
+			<label for="sort">SORT: </label>
+			<select id="sort" onchange="changeDiv()">
+				<option value="P_RATING%3A1">Popularity</option>
+				<option value="P_NEW%3A1">Newest</option>
+				<option value="price%3A0">Price low to high</option>
+				<option value="price%3A1">Price high to low</option>
+			</select>
+		</div>
+		<div id="product">
+			<div id="container"></div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
+<script src="./script/fetch.js"></script>
+<script src="./script/product.js"></script>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+
+  import {footer} from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+</script>
+<script src="./script/navscript.js" type="module"></script>
+<script src="./script/sidebar.js"></script>
+<script src="./script/input.js"></script>
+<script src="./script/fetch.js"></script>

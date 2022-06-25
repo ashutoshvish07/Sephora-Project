@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/confetti.css" />
+		<link
+			rel="shortcut icon"
+			href="https://static.nnnow.com/client/assets/images/favicon.ico"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@200;400;500;600;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Delivery</title>
+	</head>
+	<body>
+		<div class="delivery-container">
+			<div class="logo-div" onclick="homepage()">
+				<img
+					src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png"
+					alt=""
+				/>
+			</div>
+			<p>Your order is successful!</p>
+			<img
+				src="https://media.istockphoto.com/vectors/cute-young-woman-with-shopping-bags-and-presents-isolated-on-white-vector-id1207542848?k=20&m=1207542848&s=170667a&w=0&h=Zd1zK0D2ocfazzWblGvSk8SdRm1_FwzolSmebCBQMhI="
+				alt=""
+			/>
+		</div>
+		<div class="text-div">
+			<p class="address">
+				Thank you for shopping! Your Order will be delivered within 7 working
+				days.
+			</p>
+			<img
+				class="truck"
+				src="https://thumbs.gfycat.com/FeminineDearHorseshoecrab-size_restricted.gif"
+				alt=""
+			/>
+		</div>
+
+		<script src="./script/confetti.js"></script>
+		<!-- Confetti  JS-->
+		<script>
+			// start
+
+			const start = () => {
+				setTimeout(function () {
+					confetti.start();
+				}, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+			};
+
+			//  Stop
+
+			const stop = () => {
+				setTimeout(function () {
+					confetti.stop();
+				}, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+			};
+			start();
+			stop();
+
+			let homepage = () => {
+				window.location.href = "index.html";
+			};
+		</script>
+	</body>
+</html>

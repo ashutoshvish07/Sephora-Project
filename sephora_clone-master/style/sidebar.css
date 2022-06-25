@@ -1,0 +1,571 @@
+@media screen and (min-width: 1310px) {
+	#sidebarMenu {
+		display: none;
+	}
+	#openSidebarMenu {
+		display: none;
+	}
+	.header {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1310px) {
+	/* #sidebarMenu{
+            display: none;
+        } 
+         #openSidebarMenu{
+            display: none;
+        } 
+         .header{
+            display: none;
+        } */
+	#outernav {
+		visibility: hidden;
+	}
+
+	.nav-section {
+		border: none;
+	}
+
+	#head-top {
+		background-color: white;
+		width: 100%;
+	}
+	#head-top-left {
+		display: none;
+	}
+	#head-top #head-top-center {
+		margin: auto;
+	}
+	#head-top-right {
+		display: none;
+	}
+	#head-bottom-lower {
+		display: none;
+	}
+	#head-bottom-upper {
+		display: none;
+	}
+
+	#ab a span {
+		position: absolute;
+		top: 14px;
+	}
+	#ab a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#ab1 a span {
+		position: absolute;
+		top: 14px;
+	}
+	#ab1 a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#ab div {
+		display: none;
+	}
+
+	#ab1 div {
+		display: none;
+	}
+	#cheek p {
+		margin-left: 65px;
+	}
+	#SKIN p {
+		margin-left: 65px;
+	}
+	#haircareDiv a span {
+		position: relative;
+		top: 5px;
+	}
+	#haircareDiv > a {
+		margin-top: -20px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#hairsSub a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#haircareDiv div {
+		display: none;
+	}
+	#hairsSub p {
+		margin-left: 65px;
+	}
+	#toolsDiv a span {
+		position: relative;
+		top: 5px;
+	}
+	#brush_tool_Sub a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#brush_tool_Sub {
+		margin-top: -40px;
+	}
+	#brush_tool_Sub p {
+		margin-left: 65px;
+		font-weight: 300;
+	}
+	#sidebar_sale a {
+		font-weight: 300;
+		margin-left: 20px;
+	}
+
+	#toolsDiv div {
+		display: none;
+	}
+	#toolsDiv > a {
+		margin-top: -20px;
+		font-weight: 300;
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+	#sidebar_login {
+		margin-top: -25px;
+		font-size: 15px;
+	}
+	#sidebar_login span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-left: 20px;
+		color: #ff68b3;
+	}
+	#sidebar_login a {
+		font-weight: 300;
+		font-size: 15px;
+		margin-top: -38px;
+		margin-left: 32px;
+	}
+	#sidebar_app a {
+		font-weight: 300;
+		font-size: 15px;
+		margin-top: -20px;
+	}
+	#sidebar_app span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 10px;
+		color: #ff68b3;
+	}
+	#sidebar_contact a {
+		font-weight: 300;
+		font-size: 15px;
+		margin-top: -20px;
+	}
+	#sidebar_contact span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 10px;
+		color: #ff68b3;
+	}
+
+	/* header for max width- 800px */
+	.header {
+		display: flex;
+		padding-left: 58px;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: -157px;
+	}
+	.header a {
+		text-decoration: none;
+		color: black;
+		font-size: 22px;
+	}
+	.header .right-header {
+		display: flex;
+		padding-right: 2%;
+	}
+	.header .right-header span {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.right-header span {
+		color: #ec008c;
+	}
+
+	h1 {
+		text-align: center;
+		padding-top: 30px;
+	}
+	.header {
+		background-color: #f2f2f2;
+		width: 100%;
+		height: 60px;
+		position: absolute;
+		z-index: 10;
+	}
+
+	#sidebarMenu {
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* width: 100%; */
+		margin-top: 106px;
+		transform: translateX(-100%);
+		transition: transform 250ms ease-in-out;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		position: absolute;
+	}
+	.menu hr {
+		width: 98%;
+		margin: auto;
+	}
+	.menu {
+		list-style: none;
+		background-color: white;
+
+		margin: 0;
+		padding: 0;
+	}
+	.menu li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		text-align: left;
+	}
+	.menu li a {
+		color: black;
+		display: block;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	#openSidebarMenu:checked ~ #sidebarMenu {
+		transform: translateX(0);
+	}
+	#sidebarMenu {
+		display: block;
+	}
+	#openSidebarMenu {
+		display: block;
+	}
+	input#openSidebarMenu {
+		display: none;
+	}
+	.sidebarIconToggle {
+		height: 22px;
+		width: 22px;
+		position: absolute;
+		z-index: 99;
+		top: 70px;
+		left: 15px;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+	.spinner {
+		height: 3px;
+		background-color: black;
+		transition: all 0.3s;
+		margin-top: -4px;
+	}
+	.spinner.middle,
+	.spinner.bottom {
+		margin-top: 3px;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+		opacity: 0;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+		transform: rotate(135deg);
+		margin-top: 8px;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+		transform: rotate(-135deg);
+		margin-top: -9px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#outernav {
+		visibility: hidden;
+	}
+
+	.nav-section {
+		border: none;
+	}
+	#head-top {
+		background-color: white;
+		width: 100%;
+	}
+	#head-top-left {
+		display: none;
+	}
+	#head-top #head-top-center {
+		margin: auto;
+	}
+	#head-top-right {
+		display: none;
+	}
+	#head-bottom-lower {
+		display: none;
+	}
+	#head-bottom-upper {
+		display: none;
+	}
+	#ab a span {
+		position: absolute;
+		top: 14px;
+	}
+	#ab a {
+		position: relative;
+		font-weight: 300;
+		margin-left: 20px;
+		margin-top: -10px;
+	}
+	#ab div {
+		display: none;
+	}
+	#ab1 a span {
+		position: absolute;
+		top: 14px;
+	}
+	#ab1 a {
+		position: relative;
+		font-weight: 300;
+		margin-left: 20px;
+		margin-top: -10px;
+	}
+
+	#ab1 div {
+		display: none;
+	}
+
+	#cheek p {
+		margin-left: 65px;
+	}
+	#SKIN p {
+		margin-left: 65px;
+	}
+
+	#haircareDiv a span {
+		position: relative;
+		top: 5px;
+	}
+	#haircareDiv > a {
+		margin-top: -20px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#haircareDiv a {
+		position: relative;
+		font-weight: 300;
+	}
+	#haircareDiv div {
+		display: none;
+	}
+	#hairsSub p {
+		margin-left: 65px;
+	}
+	#hairsSub a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#brush_tool_Sub p {
+		margin-left: 65px;
+		font-weight: 300;
+	}
+	#brush_tool_Sub {
+		margin-top: -40px;
+	}
+	#brush_tool_Sub a {
+		position: relative;
+		margin-top: -10px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#toolsDiv > a {
+		margin-top: -20px;
+		font-weight: 300;
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+	#toolsDiv div {
+		display: none;
+	}
+	#sidebar_sale a {
+		font-weight: 300;
+		margin-left: 20px;
+	}
+	#sidebar_login {
+		margin-top: -25px;
+		font-size: 15px;
+	}
+	#sidebar_login span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 10px;
+		color: #ff68b3;
+	}
+	#sidebar_login a {
+		font-weight: 300;
+		font-size: 15px;
+	}
+	#sidebar_app a {
+		font-weight: 300;
+		font-size: 15px;
+		margin-top: -20px;
+	}
+	#sidebar_app span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 10px;
+		color: #ff68b3;
+	}
+	#sidebar_contact a {
+		font-weight: 300;
+		font-size: 15px;
+		margin-top: -20px;
+	}
+	#sidebar_contact span {
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 10px;
+		color: #ff68b3;
+	}
+
+	/* header for max width- 800px */
+	.header {
+		display: flex;
+		padding-left: 58px;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: -157px;
+	}
+	.header a {
+		text-decoration: none;
+		color: black;
+		font-size: 22px;
+	}
+	.header .right-header {
+		display: flex;
+		padding-right: 2%;
+	}
+	.header .right-header span {
+		margin-right: 10px;
+		margin-left: 10px;
+		color: #ec008c;
+	}
+
+	h1 {
+		text-align: center;
+		padding-top: 30px;
+	}
+	.header {
+		background-color: #f2f2f2;
+		width: 100%;
+		height: 60px;
+		position: absolute;
+		z-index: 10;
+	}
+
+	#sidebarMenu {
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* width: 100%; */
+		margin-top: 106px;
+		transform: translateX(-100%);
+		transition: transform 250ms ease-in-out;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		position: absolute;
+	}
+	#sidebarMenu > p {
+		font-weight: 400;
+	}
+	.menu hr {
+		width: 98%;
+		margin: auto;
+	}
+	.menu {
+		list-style: none;
+
+		margin: 0;
+		padding: 0;
+	}
+	.menu li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		text-align: left;
+	}
+	.menu li a {
+		color: black;
+		display: block;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	#openSidebarMenu:checked ~ #sidebarMenu {
+		transform: translateX(0);
+	}
+	#sidebarMenu {
+		display: block;
+	}
+	#openSidebarMenu {
+		display: block;
+	}
+	input#openSidebarMenu {
+		display: none;
+	}
+	.sidebarIconToggle {
+		height: 22px;
+		width: 22px;
+		position: absolute;
+		z-index: 99;
+		top: 70px;
+		left: 15px;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+	.spinner {
+		height: 3px;
+		background-color: black;
+		transition: all 0.3s;
+		margin-top: -4px;
+	}
+	.spinner.middle,
+	.spinner.bottom {
+		margin-top: 3px;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+		opacity: 0;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+		transform: rotate(135deg);
+		margin-top: 8px;
+	}
+	#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+		transform: rotate(-135deg);
+		margin-top: -9px;
+	}
+}

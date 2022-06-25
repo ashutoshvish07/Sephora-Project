@@ -1,0 +1,248 @@
+.main-menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* background-color: #f1f1f1; */
+}
+#outernav {
+	z-index: 99;
+	background-color: white;
+}
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	font-size: 10px;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.main-menu li {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0;
+}
+
+.main-menu a {
+	color: #444;
+	text-decoration: none;
+	display: block;
+	padding: 22px 15px;
+	margin: 0;
+	letter-spacing: 1.5px;
+}
+
+.main-menu {
+	display: flex;
+	width: 100%;
+}
+
+.menu-sub ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	font-size: 12px;
+	left: 0;
+	right: 0;
+	/* width: 100%; */
+	/* text-align: center; */
+}
+
+.menu-sub {
+	position: absolute;
+	left: 0;
+	background-color: white;
+	display: none;
+	padding: 20px;
+}
+
+.main-menu > li:hover .menu-sub {
+	display: flex;
+	/* width: 100%; */
+	margin-top: -5px;
+}
+
+.main-menu > li:hover {
+	display: block;
+	background-color: white;
+}
+
+.menu-sub a {
+	padding: 0;
+	margin: 0px;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.sub-category > li > #innerUL1 li {
+	flex-direction: column;
+	/* background-color: #ec008c; */
+	display: block;
+	line-height: 21px;
+	letter-spacing: 1px;
+	font-weight: lighter;
+}
+
+.sub-category > li > #innerUL1 li:hover {
+	color: #ec008c;
+	cursor: pointer;
+}
+
+.sub-category > li {
+	margin-left: 25px;
+	margin-right: 80px;
+	margin-bottom: 40px;
+}
+.sub-category {
+	display: flex;
+	/* border: 1px solid black; */
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.navcontainer {
+	width: 75%;
+	margin: auto;
+}
+.main-menu {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: -5px;
+}
+.main-menu > li:hover {
+	-webkit-box-shadow: 1px -14px 19px -7px rgba(158, 153, 158, 0.88);
+	-moz-box-shadow: 1px -14px 19px -7px rgba(158, 153, 158, 0.88);
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-bottom: 0;
+}
+.main-menu > #sale:hover {
+	box-shadow: none;
+	color: #ec008c;
+	background-color: transparent;
+}
+
+.main-menu a:hover {
+	color: #ec008c;
+}
+
+#sale1 {
+	font-size: 16px;
+	margin-top: -1px;
+}
+.navcontainer {
+	white-space: nowrap;
+}
+.menu-sub {
+	width: 100%;
+	/* position: relative; */
+	/* background-color: teal; */
+	padding-left: 12%;
+	padding-right: 12%;
+	/* margin-left: 240px; */
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+		rgba(17, 17, 26, 0.1) 0px 0px 8px;
+	margin-top: 0;
+}
+
+/* Vivek CSS End */
+
+.nav-section .head-bottom {
+	height: 155px;
+}
+
+.nav-section .head-bottom .head-bottom-upper {
+	height: 60%;
+	width: 75%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+}
+.nav-section .head-bottom .head-bottom-lower {
+	height: 40%;
+	background-color: none;
+}
+
+.head-bottom-upper > div {
+	width: 32%;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+.input-head-bottom-upper hr {
+	width: 60%;
+	margin: auto;
+	margin-left: 10%;
+}
+.input-head-bottom-upper > .material-icons {
+	margin-bottom: 0;
+}
+.head-bottom-upper > .input-head-bottom-upper {
+	vertical-align: top;
+	position: relative;
+	/* background-color: #06d85f; */
+}
+#innernav {
+	display: flex;
+	/* border: 1px solid red; */
+	height: 50px;
+	width: 75%;
+	margin: auto;
+	justify-content: space-between;
+}
+#outernav {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	position: sticky;
+}
+#stickynavsephora {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-family: sans-serif;
+	align-items: center;
+}
+#Stickynav_leftDiv {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#innernav span {
+	color: #ec008c;
+}
+#stickynavlogin {
+	text-decoration: none;
+	color: black;
+}
+#Stickynav_rightDiv {
+	display: flex;
+	align-items: center;
+	/* margin-top: 10px; */
+}
+#Stickynav_rightDiv span {
+	margin-left: 15px;
+}
+#Stickynav_rightDiv a {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+#Stickynav_rightDiv hr {
+	border: none;
+	border-left: 1px solid hsla(200, 10%, 50%, 100%);
+	height: 20px;
+	width: 1px;
+	margin-left: 10px;
+}
+
+#outernav {
+	position: fixed;
+	margin: auto;
+
+	width: 100%;
+	display: none;
+}

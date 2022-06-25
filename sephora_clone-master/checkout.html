@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style/checkout.css" />
+		<link
+			rel="shortcut icon"
+			href="https://static.nnnow.com/client/assets/images/favicon.ico"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="bagnav" id="bagnav">
+				<div class="innernav" id="innerNav">
+					<div class="logoimg" id="logoimg">
+						<img
+							src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png"
+							alt=""
+						/>
+					</div>
+					<div class="account box" id="account">
+						<a class="button" id="logname" href="#popup1">Login</a>
+						<span class="material-icons"> expand_more </span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="checkout-parent" id="checkout-parent">
+			<div class="innerbox" id="innerbox">
+				<div class="chekout-text" id="chekout-text">
+					<span class="chekout">CHECKOUT</span>
+				</div>
+			</div>
+		</nav>
+		<div class="main" id="main">
+			<div class="main-left" id="main-left">
+				<div class="total-amount-div" id="total-amount-div">
+					<span class="material-icons"> account_balance_wallet </span>
+					<p>TOTAL PAYABLE AMOUNT</p>
+					<h3 id="checkoutTotal">0</h3>
+				</div>
+
+				<div class="payment-method">
+					<div class="payment-method-top" id="payment-method-top">
+						<span class="material-icons"> payment </span>
+						<p>PAYMENT METHODS</p>
+					</div>
+					<hr />
+					<div class="payment-method-bottom" id="payment-method-bottom">
+						<!-- <div class="pay-choice">
+							<span></span>
+							<p>Credit / Debit Card</p>
+						</div>
+						<div class="pay-choice">
+							<span></span>
+							<p>Net Banking</p>
+						</div>
+						<div class="pay-choice">
+							<span></span>
+							<p>Paytm Wallet</p>
+						</div>
+						<div class="pay-choice">
+							<span></span>
+							<p>Other Wallets</p>
+						</div>
+						<div class="pay-choice">
+							<span></span>
+							<p>UPI</p>
+						</div> -->
+
+						<!-- <form action="#"> -->
+							<ul></ul>
+							<li>
+								<div id="debit">
+									 <input type="radio" id="credit" name="radio-group" checked />
+								<label   for="credit">Credit / Debit Card</label> 
+
+
+								<div id="debitCardDiv">
+									<form action="">
+										<div>
+											<label >Enter your card number (Visa, Mastercard, Amex)</label><br>
+											<input type="number" id="cardlength" >
+										</div>
+										<div>
+											<label >Enter Name on Card</label><br> 	
+											<input type="text" name="" id="cardname">
+										</div>
+										<div>
+										<label for="">CVV</label><br>
+										<input type="number" name="" id="cardcvv">
+										</div>
+										<div id="date">
+											<label  for="date">Exp. Date</label>
+											<input type="number" name="" id="" placeholder="MM">
+											<input type="number" name="" id="" placeholder="YYYY">
+										 <!-- <select name="Month" id="monthid">
+												<option value="MM">MM</option>
+												<option value="1">1</option>
+												<option value="1">2</option>
+												<option value="1">3</option>
+												<option value="1">4</option>
+												<option value="1">5</option>
+												<option value="1">6</option>
+												<option value="1">7</option>
+												<option value="1">8</option>
+												<option value="1">9</option>
+												<option value="1">10</option>
+												<option value="1">11</option>
+												<option value="1">12</option>
+											</select>
+
+											<select name="Year" id="yearid">
+												<option value="year">YYYY</option>
+												<option value="2022">2022</option>
+												<option value="2023">2023</option>
+												<option value="2024">2024</option>
+												<option value="2025">2025</option>
+												
+												
+
+											</select>
+											 -->
+										</div>
+										
+									</form>
+								</div>
+								</div>
+								
+								
+							</li>
+							
+							<li>
+								<div id="netbankDiv">
+									<input type="radio"id="net-banking"name="radio-group"checked/>
+									<label for="net-banking">Net Banking</label>
+
+									<div id="netbankData">
+										<p>Popular banks</p>
+										<img src="https://static.nnnow.com/client/assets/images/netbanking/axis.png" alt="">
+										<img src="https://static.nnnow.com/client/assets/images/netbanking/hdfc.png" alt="">
+										<img src="https://static.nnnow.com/client/assets/images/netbanking/icici.png" alt="">
+										<img src="https://static.nnnow.com/client/assets/images/netbanking/sbi.png" alt="">
+										
+										
+										
+										
+									</div>
+								</div>
+								
+							</li>
+							<!-- <li>
+								<div id="UPIdiv1">
+									<input type="radio" id="upi1" name="radio-group" checked/>
+									<label for="upi1">UPI</label>
+
+									<div id="upidata1">
+										<label for="">UPI ID:-</label>
+										<input type="text" placeholder="example@bank">
+									</div>
+								</div>	
+								
+								
+							</li> -->
+
+
+							<li>
+								<div id="paytm">
+									<input type="radio" id="paytm1" name="radio-group" checked/>
+									<label for="paytm1">Paytm Wallet</label>
+
+									<div id="paymwallet">
+										<p>Paytm has sent an otp to Registerd Number</p>
+										<input type="number" placeholder="Enter OTP">
+									</div> 
+								</div>
+								
+							</li>
+							<li>
+								<div id="UPIdiv">
+									<input type="radio" id="upi" name="radio-group" checked/>
+									<label for="upi">UPI</label>
+
+									<div id="upidata">
+										<label for="">UPI ID:-</label>
+										<input type="text" placeholder="example@bank">
+									</div>
+								</div>
+								
+								
+							</li>
+						<!-- </form> -->
+					</div>
+				</div>
+			</div>
+			<div class="main-right" id="main-right">
+				<div class="overview">
+					<div class="overview-title-div">
+						<p class="overview-title" id="overview-text">OVERVIEW</p>
+					</div>
+					<div class="subtotal-div" id="subtotal-div">
+						<p id="subtotal-text">Subtotal</p>
+						<p id="subtotal-number">0</p>
+					</div>
+					<div class="discount-div" id="discount-div">
+						<p id="discount-text">Discount</p>
+						<p id="discount-number">0</p>
+					</div>
+					<div class="gst-div" id="gst-div">
+						<p id="gst-text">GST</p>
+						<p id="gst-number">Rs. 0</p>
+					</div>
+					<div class="delivery-div" id="delivery-div">
+						<p id="delivery-text">Delivery Charges</p>
+						<p id="delivery-number">Rs. 0</p>
+					</div>
+					<hr />
+					<div class="total-div" id="total-div">
+						<p id="total-text">Total</p>
+						<p id="total-number">0</p>
+					</div>
+				</div>
+				<div class="button-div">
+					<button class="address-button form-control" id="address-button2">
+						CONFIRM ORDER
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-child-left">
+				<div><img src="https://static.nnnow.com/Verified_by_Visa_logo.png" alt=""></div>
+				<div><img src="https://static.nnnow.com/verified-mastercard.png" alt=""></div>
+				<div><img src="https://static.nnnow.com/verified-pci.png" alt=""></div>
+				<div><img src="https://static.nnnow.com/AMEX-safekey.png" alt=""></div>
+				
+			</div>
+			<div class="footer-child-right">
+				<p>© 2022 NNNOW</p>
+				<hr>
+				<p>Privacy Policy</p>
+				<hr>
+				<p>Terms & Conditions</p>
+			</div >
+		</div>
+	</body>
+	<script src="script/chekout.js"></script>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/stickynav.css" />
+    <style>
+        #grid1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: auto;
+            gap: 20px;
+        }
+        #grid1>div{
+            height: 350px;
+            width: 350px;
+            /* border: 1px solid rebeccapurple; */
+        }
+        #grid1> div> img{
+            height: 350px;
+            width: 350px;
+        }
+        body>div{
+            width: 80%;
+            /* height: 300px; */
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        #clarins>img{
+            width: 100%;
+            height: 300px;
+        }
+        /* #topBeauty{
+            width: 80%;
+        } */
+        #topBeauty >img{
+            width: 100%;
+            height: 100px;
+        }
+        #backTop{
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            /* transition: 2s;       */
+        }
+        
+        #subscribe {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 160px;
+}
+#subscribe h3 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 40px;
+}
+#input_div {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+ 
+}
+#input_div input {
+  width: 50%;
+  height: 50px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  margin-right: 0;
+  font-size: 20px;
+  font-weight: lighter;
+}
+#input_div button {
+  height: 50px;
+  width: 30%;
+  margin-left: -4px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+}
+#text_Div {
+  width: 80%;
+  margin: auto;
+}
+#text_Div h6{
+    text-align: center;
+    padding-top: 40px;
+    color: #6c798d;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#text_Div h6+p{
+    text-align: center;
+    padding-top: 20px;
+    color: #6c798d;
+    font-size: small;
+}
+#text_Div>p{
+    text-align: center;
+    padding-top: 10px;
+    color: #6c798d;
+    font-size: small;
+}
+    </style>
+</head>
+<body>
+    <div id="component"></div>
+    <div id="slide1">
+        <!-- <img src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Offerpage_DoublesidedcleansingbrushDesktop.jpg" alt="top slide1"> -->
+    </div>
+    <button onclick="arrForward()">></button>
+    <div id="clarins" onclick="searchPro(id)">
+        <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2022/SalePageBanner-Desktop.jpg" alt="clarins">
+    </div>
+    <div id="topBeauty">
+        <img src="https://logan.nnnow.com/content/dam/nnnow-project/30-sep-2020/30SEP20_SEPHORA-OFFERPAGEZ_PREHEADER_DESK.jpg" alt="">
+    </div>
+    <div id="grid1">
+        <div id="pixi" onclick="searchPro(id)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/15-feb-2022/PIXI_P-story.jpg" alt="pixi">
+        </div>
+        <div id="anastasia" onclick="searchPro(id)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/15-feb-2022/ABH_P-story.jpg" alt="anastasia">
+        </div>
+        <div id="mario-badescu" onclick="searchPro(mario-badescu)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/14-feb-2022/MarioBadescuP-story(1).jpg" alt="mario-badescu">
+        </div>
+        <div id="foreo" onclick="searchPro(foreo)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/17-dec-2021/ForeoPStory.jpg" alt="foreo">
+        </div>
+        <div id="dear-dahlia" onclick="searchPro(dear-dahlia)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/12-nov-/13SEP21-HP-DearDahlia-TB-LIPSUITE-APP.jpg" alt="dear-dahlia">
+        </div>
+        <div id="abhati" onclick="searchPro(abhati)">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/15-feb-2022/Abhatipstory.jpg" alt="abhati">
+        </div>
+    </div>
+    <div id="backTop"><a onClick="window.location.href ='#slide1'" style="transition: 2s;">BACKTOTOP</a></div>
+    
+    </button></div>
+    <div id="subscribe">
+        <h3>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h3>
+        <div id="input_div">
+          <input type="text" name="" id="" placeholder="Enter your email address">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+ 
+ 
+      <!-- -----------some texts ------------>
+      <div id="text_Div">
+        <h6>Sephora online India is a trailblazer in the Indian beauty scene</h6>
+        <p>A leader in luxury beauty and skincare, our purpose at Sephora online India is to create an inviting online beauty shopping experience and inspire fearlessness in our community. Since the Sephora India launch in 2013, we have been an industry-leading champion of diversity, and empowerment, guided by our longstanding company values.</p>
+ 
+        <h6>Discover who we are and what we entail only on NNNOW.com</h6>
+        <p>\nOwned by LVMH Moet Hennessy Louis Vuitton, the world's leading luxury goods group, Sephora was founded in France by Dominique Mandonnaud in 1970 and is defined by its unique, open-sell environment with an ever-increasing assortment of best-selling lipsticks, eyeliners, foundations, eye palettes and more from carefully curated brands such as Make Up For Ever, Estee Lauder, Benefit Cosmetics, Huda Beauty and many more.</p>
+ 
+        <h6>Shop Our unrivalled range of Sephora products for a more beautiful you</h6>
+        <p>\nOur array on Sephora NNNOW features trusted classics from Pixi, Elizabeth Arden, Anastasia Beverly Hills, Clinique, Tom Ford, and Sephora’s own, SEPHORA COLLECTION. Today, Sephora India online is a powerful beauty presence in the digital space, thanks to its unparalleled assortment of prestige products in every category, unbiased service from beauty experts, interactive shopping environment, and innovation.</p>
+ 
+        <p>Through some of our bestsellers such as Sephora lipsticks, Sephora foundations, and other Sephora products, we explore the universe of beauty and wellness with an unbiased approach to experiential retail. We also host expert tutorial videos from our top brands to help you nail the perfect smokey eye or winged eyeliner. Our team of experts in-store also works hard to assure you have a seamless shopping experience with us and helps you define your skin undertones while purchasing the right sephora foundation for you. Sephora continues to give back to communities and advance inclusion in the beauty industry by providing an unrivaled range of shades for Sephora foundations at unbeatable prices.</p>
+ 
+        <p>Sephora in India also encompasses a formidable range of skincare, bath and body products, haircare, fragrances and perfumes from international brands. Many of our brands such as Botanist and Forest Essentials boast of incorporating only natural ingredients in their products, whereas award-winning such as Natasha Denona, Nudestix, Kora Organics, Aveda, Olaplex, and more promise only SLS/Paraben-free formulas in their range of products. Be sure to also check out our range of cruelty-free brands that include best-selling brands such as Caudalie, Smashbox, Dear Dahlia, Juice Beauty and much more. Sephora online hosts the entire range of makeup and skin products available in Sephora stores in India. Buy Sephora online on NNNOW and be the first to be alerted when we have a major Sephora India sale event coming up!</p>
+ 
+        <p>Start your Sephora India online shopping on NNNOW.com</p>
+ 
+        <p>Women can now shop their favorite luxury beauty brands on the Sephora site or via the NNNOW mobile app. Be spoilt for choice with a wide variety of makeup, skincare, haircare, bath and body and fragrances that you can shop from the comfort of your home. Discover online shopping that offers advantages such as Gift With Purchase, freebie sachets, and discount offers on beauty! Buy Sephora online at amazing deals and prices at the click of a button.</p>
+      </div>
+      <!-- for lower  Footer -->
+      <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+
+  import {footer} from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+</script>
+<script>
+    let arrData= ["https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Offerpage_DoublesidedcleansingbrushDesktop.jpg","https://logan.nnnow.com/content/dam/nnnow-project/15-feb-2022/SC_Topbanner_Upto40offDesktop.jpg"]
+    let image1 =document.createElement("img");
+        let i=0;
+        setInterval(function(){
+            if(i==arrData.length){
+                i=0;
+            }
+            image1.src=arrData[i];
+            console.log(arrData[i]);
+            image1.style.width="100%";
+            image1.style.height="400px"
+            document.querySelector("#slide1").append(image1);
+            i++;
+        },2000)
+
+        function arrForward(){
+            setInterval(function(){
+            if(i==arrData.length){
+                i=0;
+            }
+            image1.src=arrData[i];
+            console.log(arrData[i]);
+            image1.style.width="100%";
+            image1.style.height="400px"
+            document.querySelector("#slide1").append(image1);
+            i++;
+        },5000)
+        }
+
+</script>
+<script src="./script/fetch.js"></script>

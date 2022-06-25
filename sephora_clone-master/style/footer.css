@@ -1,0 +1,105 @@
+#footer a{
+    color: black;
+    text-decoration: none;
+}
+
+#footer{
+    margin-top: 40px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer h3{
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer a:hover{
+    color: #E72E98;
+}
+
+
+#footer p:hover{
+    color: #E72E98;
+    cursor: pointer;
+}
+
+#footer_div1{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 85.7px;
+}
+
+#sm_icons{
+    width: 25%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 28px;
+}
+
+#footer_div2{
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    font-weight: 200;
+    font-size: smaller;
+}
+
+h3{
+   text-align: center;
+   margin-top:26px;
+}
+
+#brands_footer{
+    width: 80%;
+    height: 120px;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    /* line-height: 0px; */
+    gap:6px;
+    flex-wrap: wrap;
+    margin: auto;
+    font-weight: 200;
+    font-size: smaller;
+    margin-top: 0px;
+}
+
+
+
+#brands_footer>span{
+    padding-left: 3px;
+}
+
+#makeup_footer,#skincare_footer,#other_footer,
+#mysephora_footer{
+    width: 80%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    line-height: 0px;
+    gap:6px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 12px;
+    font-weight: 200;
+    font-size: smaller;
+}
+
+

@@ -1,0 +1,62 @@
+#top {
+	/* display: block;
+    margin: auto; */
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#bottom {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#bottom > div {
+	/* height: 300px; */
+	height: auto;
+	width: 250px;
+	/* border: 1px soli d red; */
+	margin: auto;
+}
+
+#top > input {
+	height: 50px;
+	width: 40%;
+	font-size: medium;
+	background-color: black;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-left: 35px;
+}
+
+#icon {
+	margin-left: -50px;
+	color: pink;
+}
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+	#bottom {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#top {
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 420px) {
+	#bottom {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#top {
+		margin: auto;
+	}
+}

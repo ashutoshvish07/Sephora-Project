@@ -1,0 +1,76 @@
+#contaienr1 {
+	height: 800px;
+	width: 110%;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-evenly;
+	/* object-fit: contain; */
+	/* border: 3px solid; */
+	z-index: 78;
+	align-items: center;
+}
+body {
+	height: 100vh;
+}
+.mapparent {
+	margin-top: 0rem;
+	margin-right: 0;
+	height: 800px;
+	width: 75%;
+	display: flex;
+	/* background-color: yellow; */
+}
+.query1 {
+	/* margin-top: 3rem; */
+	width: 25%;
+	height: 100%;
+	margin-left: 2rem;
+	/* z-index: 88; */
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	border: 3px solid #fa6fc3;
+	border-radius: 12px;
+	align-items: center;
+	text-align: center;
+	/* display: inline; */
+}
+.query1 h2 {
+	margin-top: 3rem;
+}
+.query1 input {
+	height: 3rem;
+	margin-top: 1rem;
+	width: 60%;
+	margin-right: 0;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding-left: 8px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+}
+.mapouter {
+	width: 100%;
+	/* margin-left: auto; */
+	padding-right: 3rem;
+	margin: 0;
+}
+
+#submitmap {
+	height: 3rem;
+	margin-top: 1rem;
+	padding: 8px;
+	background-color: #fa6fc3;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-weight: 700;
+	font-size: medium;
+	letter-spacing: 1px;
+}
+
+.artimg {
+	padding-top: 5rem;
+}

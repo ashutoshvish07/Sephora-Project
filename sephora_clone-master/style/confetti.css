@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Product Sans";
+}
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	border: 4px solid rgb(250, 64, 151);
+	/* background: #ffe9ee; */
+	/* display: flex; */
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.logo-div {
+	max-width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.delivery-container {
+	margin: auto;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+p {
+	font-family: "Oleo Script Swash Caps", cursive;
+	/* font-family: 'Poppins', sans-serif;sans-serif; */
+	font-weight: 400;
+	color: rgb(243, 8, 117);
+	font-size: 3rem;
+	margin-bottom: 8px;
+}
+img {
+	max-width: 65%;
+}
+
+.truck {
+	max-height: 100px;
+}
+.text-div {
+	margin-top: auto;
+	margin: auto;
+	margin-bottom: 0;
+	background-color: rgb(250, 64, 151);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.text-div .address {
+	font-size: 24px;
+	font-weight: 900;
+	font-family: sans-serif;
+	/* color: black; */
+	max-width: 60%;
+	margin: auto;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.text-div img {
+	max-width: 95%;
+	margin-top: 2rem;
+}

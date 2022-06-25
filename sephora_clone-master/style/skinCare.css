@@ -1,0 +1,108 @@
+div>img {
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#topImg{
+    width: 90%;
+    margin: auto;
+}
+#Shop >h3{
+    padding-left: 50px;
+    color: black;
+    font-weight: 800;
+}
+
+#main>div:nth-child(1) {
+    width: 30%;
+    height: auto;
+}
+
+#main>div:nth-child(2) {
+    width: 70%;
+    height: auto;
+}
+#face {
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#face:hover {
+    color: #ff80cb;
+}
+#SectionName,
+#SectionName2,
+#SectionName3,
+#SectionName4,
+#SectionName5,
+#SectionName6,
+#SectionName7 {
+        display: none;
+    }
+#SectionName p,
+#SectionName2 p,
+#SectionName3 p,
+#SectionName4 p,
+#SectionName5 p,
+#SectionName6 p,
+#SectionName7 p {
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+.slidWindow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.innerDiv{
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+    /* background-color: #bba7a7; */
+    display: flex;
+    gap: 20px;
+}
+.card{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+
+.lr-btn{
+    display: flex;
+    justify-content: space-between;
+
+}
+.left, .right{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #E72E98;
+    cursor: pointer;
+}

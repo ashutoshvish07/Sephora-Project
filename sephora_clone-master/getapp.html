@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/navbar.css" />
+		<link rel="stylesheet" href="./style/stickynav.css" />
+		<link rel="stylesheet" href="./style/sidebar.css" />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+        <link
+			rel="stylesheet"
+			href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #app_main_div{
+            display: flex;
+            padding-left: 150px;
+            padding-right: 150px;
+            background-color: #f6f8fa
+        }
+        #app_main_div_left{
+            width: 587px;
+            height: 550px;
+        }
+        #app_main_div_left img{
+            width: 447px;
+            height: 550px;
+            margin-left: 55px;
+            margin-right: 55px;
+        }
+        #app_main_div_right{
+            width: 602px;
+            height: 550px;
+            flex-wrap: wrap;
+            margin-left: 100px;
+        }
+        #app_main_div_right_inner{
+            width: 400px;
+            height: 400px;
+            /* border: 1px solid black; */
+            margin-top: 70px;
+            box-sizing: border-box;
+            
+        }
+        #app_main_div_right_inner p{
+            font-size: 18px;
+            letter-spacing: 0.8px;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+        #app_main_div_right_inner h1{
+            font-size: 55px;
+        }
+        #inputbox{
+            display: flex;
+            margin-bottom: 10px;
+            /* border: 1px solid black; */
+            height: 62px;
+            margin-bottom: 30px;
+        }
+        #inputbox input{
+            height: 220px;
+            height: 60px;
+            border: transparent;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+        #app_submitbtn{
+            font-size: 18px;
+            /* padding: 15px; */
+            height: 62px;
+            width: 180px;
+            font-weight: 500;
+            /* padding-top: 10px; */
+            color: white;
+            background-color: #f39;
+            border: none;
+            cursor: pointer;
+        }
+        #applinks a{
+            margin-right: 20px;
+        }
+
+        #customerF div{
+            justify-content: center;
+            display: flex;
+            margin: 20px 0;
+
+        }
+        #feedbacks{
+            display: flex;
+            margin-left: 125px;
+            margin-right: 125px;
+            gap: 30px;
+        }
+        #feedbacks>div{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 615px;
+            height: 187px;
+            margin-left: 30px;
+        }
+        #flexbox1{
+            display: flex;
+            margin-bottom: 25px;
+        }
+        #flexbox1 h2{
+            font-size: .77778rem;
+        }
+        #flexbox1 >img{
+            margin-right: 15px;
+        }
+
+
+        
+        #feedback_data{
+            line-height: 28px;
+            font-weight: 500;
+            word-break: break-word; 
+        }
+        #userimg{
+            width: 60px;
+            height: 60px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- ---------Apply navbar here-------- -->
+		<div id="component"></div>
+
+
+    <div id="app_main_div">
+        <div id="app_main_div_left">
+            <img src="https://static.nnnow.com/client/assets/images/app/app-screens.jpg" alt="">
+        </div>
+        <div  id="app_main_div_right">
+            <div id="app_main_div_right_inner">
+                <h1>NNNOW ON THE GO!</h1>
+            <p>Download our top-rated app, made just for you! It's free, easy and smart.</p>
+            <div id="inputbox">
+                <input type="text" placeholder="Phone Number(+91)">
+                <button id="app_submitbtn">SEND APP LINK</button>
+            </div>
+            
+            <div id="applinks">
+                <a href="https://apps.apple.com/us/app/nnnow-fashion-shopping-app/id1142544717"><img src="https://static.nnnow.com/client/assets/images/app/apple-logo.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.nnnow.arvind&hl=en"><img src="https://static.nnnow.com/client/assets/images/app/play-logo.png" alt=""></a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="customerF">
+        <div>
+            <h2>CUSTOMER FEEDBACKS</h2>
+        </div>
+    </div>
+    <div id="feedbacks">
+        <div>
+            <div id="flexbox1">
+                <img id="userimg" src="https://static.nnnow.com/client/assets/images/app/hari.png" alt="">
+                <div>
+                    <h2>HARIKRISHNAN R NAIR</h2>
+                    <img src="https://static.nnnow.com/client/assets/images/app/ratings.png" alt="">
+                </div>
+            </div>
+            <div id="feedback_data">Uninterrupted access to fashion on my own terms - where I want, when I want, how I want, also at the price I want. 
+                Nnnow has a sense of style and purpose compared to the other online e-commerce portals. Nnnow is clear, cool and connected.
+            </div>
+        </div>
+        <div>
+            <div id="flexbox1">
+                <img id="userimg" src="https://static.nnnow.com/client/assets/images/app/gokul.png" alt="">
+                <div>
+                    <h2>HARIKRISHNAN R NAIR</h2>
+                    <img src="https://static.nnnow.com/client/assets/images/app/ratings.png" alt="">
+                </div>
+            </div>
+            <div id="feedback_data">Amazing app to buy all my favourite brands at one shot. 
+                Several filters make omni Channel buying possible across all categories. 
+                Will definitely keep coming back and buying more.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+</script>
+<script src="./script/navscript.js" type="module"></script>
+<script src="./script/sidebar.js"></script>
+<script src="./script/input.js"></script>

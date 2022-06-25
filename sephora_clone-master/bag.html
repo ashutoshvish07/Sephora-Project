@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<title>Bag</title>
+		<link rel="stylesheet" href="style/bag.css" />
+	</head>
+	<body>
+
+		<!-- <table>
+			<thead>
+				<tr id="headerOfItem">
+					<th>Item</th>
+					<th>Description</th>
+					<th style="width: 70px">Price</th>
+					<th>Quantity</th>
+					<th style="width: 70px">Total Price</th>
+				  </tr> 
+			</thead>
+			<tbody></tbody>
+		</table> -->
+		   <header>
+			<div class="bagnav" id="bagnav">
+				<div class="innernav" id="innerNav">
+					<div class="logoimg" id="logoimg">
+						<img
+							src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png"
+							alt=""
+						/>
+					</div>
+					<div class="account box" id="account">
+						<a class="button" id="logname" href="#popup1">Login</a>
+						<span class="material-icons"> expand_more </span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="bagtotal" id="bagtotal">
+			<div class="innerbox" id="innerbox">
+				<div class="bagtext" id="bagtext">
+					<span class="mybag">MY BAG : </span>
+					<span class="mybag1">0</span>
+				</div>
+			</div>
+		</nav>
+		<div id="main">
+			<div class="main-child">
+				<div class="main-child-left">
+					<table>
+						<thead>
+							 <!-- <tr id="headerOfItem"> -->
+								<th>Item</th>
+								<th>Description</th>
+								<th>QTY</th>
+								<th >Price</th>
+							  <!-- </tr>   -->
+						</thead>
+						<tbody></tbody>
+					</table>
+
+				</div>
+					
+				<div class="main-child-right">
+					<div class="promo-code">
+						<div class="promo-code-info" id="promo-code-info">
+							<img
+								src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png"
+								alt=""
+							/>
+							<p>APPLY PROMO CODE</p>
+						</div>
+						<div class="promo-code-input-div" id="promo-code-input-div">
+							<input type="text" placeholder="masai10" id="promoinp" />
+						</div>
+					</div>
+
+					<div class="overview">
+						<div class="overview-title-div">
+							<p class="overview-title" id="overview-text">OVERVIEW</p>
+						</div>
+						<div class="subtotal-div" id="subtotal-div">
+							<p id="subtotal-text">Subtotal</p>
+							<!-- <p id="overview_dollar">$</p> -->
+							<p id="subtotal-number">0</p>
+						</div>
+						<div class="discount-div" id="discount-div">
+							<p id="discount-text">Discount</p>
+							<!-- <p id="overview_dollar">$</p> -->
+							<p id="discount-number">0</p>
+						</div>
+						<div class="gst-div" id="gst-div">
+							<p id="gst-text">GST</p>
+							<p id="gst-number">$. 0</p>
+						</div>
+						<div class="delivery-div" id="delivery-div">
+							<p id="delivery-text">Delivery Charges</p>
+							<p id="delivery-number">$. 0</p>
+						</div>
+						<hr />
+						<div class="total-div" id="total-div">
+							<p id="total-text">Total</p>
+							<p id="total-number">0</p>
+						</div>
+					</div>
+
+					<div class="address-div" id="address-div">
+						<h5>Address Details</h5>
+						<input
+							type="text"
+							class="form-control"
+							id="address"
+							placeholder="Address"
+						/>
+						<input
+							type="text"
+							class="form-control"
+							id="city"
+							placeholder="City"
+						/>
+						<input
+							type="text"
+							class="form-control"
+							id="state"
+							placeholder="State"
+						/>
+						<input
+							type="number"
+							class="form-control"
+							id="pincode"
+							placeholder="Pin-code"
+						/>
+						<input
+							type="number"
+							class="form-control"
+							id="mobile"
+							placeholder="Mobile"
+						/>
+					</div>
+					<div class="button-div">
+						<button class="address-button form-control" id="address-button">
+							CONTINUE
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>  
+
+		<div id="box"></div>
+
+		
+		
+	</body>
+
+	<script type="module" src="script/bag.js"></script>
+</html>

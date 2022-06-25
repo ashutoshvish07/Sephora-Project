@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="https://static.nnnow.com/client/assets/images/favicon.ico"
+		/>
+		<link rel="stylesheet" href="./style/navbar.css" />
+		<link rel="stylesheet" href="./style/stickynav.css" />
+		<link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/footer.css">
+		<link
+			rel="stylesheet"
+			href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<script
+			src="https://kit.fontawesome.com/24c494a6b6.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- ---------Apply navbar here-------- -->
+		<div id="component"></div>
+
+		<!-- --------- Slider----------- -->
+
+		<div
+			id="carouselExampleIndicators"
+			class="carousel slide"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item" onclick="searchPro('sephora')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Homepage_Beautypowerforall_Desktop.jpg"
+						alt="First slide"
+					/>
+				</div>
+				<div class="carousel-item active" onclick="searchPro('benefit')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/09-march-2022/Benefit_TopbannerDesktop(2).jpg"
+						alt="Second slide"
+					/>
+				</div>
+				<div class="carousel-item" onclick="searchPro('sephora')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_Topbanner_Newatsephoradesktop.jpg"
+						alt="Third slide"
+					/>
+				</div>
+				<div class="carousel-item"  onclick="searchPro('anastasia')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/22-april-2022/ABH_TopBanner_ABHMattelipstickslaunchDESKTOP.gif"
+						alt="fourth slide"
+					/>
+				</div>
+				<div class="carousel-item"  onclick="searchPro('Clinique')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/22-april-2022/Clinique_TopBannerDESKTOP.jpg"
+						alt="fifth slide"
+					/>
+				</div>
+				<div class="carousel-item"  onclick="searchPro('sephora')">
+					<img
+						class="w-100"
+						src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_TopBanner_Summer,Sunshine&SPFDesktop.jpg"
+						alt="sixth slide"
+					/>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				class="carousel-control-next"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- --- steals & deals  ------ -->
+		<div id="steals" onclick="searchPro('clarins')">
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/25-march-2021/25MAR21_SEPHORA_BP_DESK_Q1.jpg"
+					alt=""
+				/>
+			</div >
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/25-march-2021/25MAR21_SEPHORA_BP_DESK_Q2.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/25-march-2021/25MAR21_SEPHORA_BP_DESK_Q3.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/10-may-2021/25MAR21_SEPHORA_BP_DESK_Q4.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/25-march-2021/25MAR21_SEPHORA_BP_DESK_Q5.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/25-march-2021/25MAR21_SEPHORA_BP_DESK_Q5.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<!-- ---------brand of week--------- -->
+		<div id="brand" onclick="searchPro('clarins')">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/10-feb-2022/SephoraBrandoftheweektext3310x240.jpg"
+				alt=""
+			/>
+		</div>
+		<div id="summer">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2022/HPBanner-Desktop.jpg"
+				alt=""
+			/>
+		</div>
+
+		<!-- ------------brand product-------- -->
+		<div id="brand_prod" >
+			<div onclick="searchPro('face')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/20-april-2022/Clarins_BrandStoreTile1.jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('makeup')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/20-april-2022/Clarins_BrandStoreTile3.jpg"
+					alt=""
+				/>
+			</div >
+			<div onclick="searchPro('body')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/20-april-2022/Clarins_BrandStoreTile2.jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('men')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/20-april-2022/Clarins_BrandStoreTile4.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<!-- ---------------------Just Landed---------- -->
+		<div id="landed" onclick="searchPro('clarins')">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/justlanded.jpg"
+				alt=""
+			/>
+		</div>
+		<!-- ---------onclick="searchPro('clarins')"-->
+		<div id="landProd">
+			<div class="container">
+				<h4 onclick="searchPro('clarins')">VIEW ALL</h4>
+				<div class="slidWindow">
+					<div class="left" id="left2">
+						<span class="material-symbols-outlined"> arrow_back_ios </span>
+					</div>
+					<div class="innerDiv" id="inner2">
+						<!-- <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div> -->
+					</div>
+					<div class="right" id="right2">
+						<span class="material-symbols-outlined"> arrow_forward_ios </span>
+					</div>
+				</div>
+				<!-- <div class="lr-btn">
+            
+            
+        </div> -->
+			</div>
+			<div>
+				<iframe
+					id="video"
+					src="https://www.youtube.com/embed/QFG8omRfQos"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+
+		<!-- -----------------beauty passs------------ -->
+		<div id="beautypass">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/22-march-2022/Loyalty_Strip_Desk.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div id="hot">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_HeaderStrip_ItsGettingHotInHeretext3310x240.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div id="hotgrid">
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_ContentP-Story_DrapedBlush.jpg"
+					alt=""
+				/>
+			</div>
+			<div >
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_ContentP-Story_HotGloss.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_ContentP-Story_CleanSlate.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+
+		<!-- ---------On sale----------- -->
+		<div id="beautypass">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_3_DESK.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div class="container">
+			<h5 onclick="searchPro('lipstick')">VIEW ALL</h5>
+			<div class="slidWindow">
+				<div class="left" id="left1">
+					<span class="material-symbols-outlined"> arrow_back_ios </span>
+				</div>
+				<div class="innerDiv" id="inner1">
+					<!-- <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div> -->
+				</div>
+				<div class="right" id="right1">
+					<span class="material-symbols-outlined"> arrow_forward_ios </span>
+				</div>
+			</div>
+			<!-- <div class="lr-btn">
+          
+          
+      </div> -->
+		</div>
+
+		<!-- ---------fev brand-------- -->
+		<div id="beautypass">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_4_DESK.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div id="steals">
+			<div onclick="searchPro('sephora')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/scdsk.jpeg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('make up for ever')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/11-oct-2021-/12OCT21-TILE-MUFE(1).jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('benefit')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/bendsk.jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('tom ford')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/05-jan-2022/TF_Logo(1).jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('lancome')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/03-jan-2022/se/Lancome_Logo(1).jpeg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('hudabeauty')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/HDdesk.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+
+		<!-- --------new block---- -->
+		<div id="beautypass">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_5_DESK.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div id="newBlock">
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_BigByDefinitionMascara.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_OutrageousPlumpLipgloss.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/01-april-2022/Kayali_NOTB.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2022/se/HudaBeauty_NOTB_GLOWISHrange.jpg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/05-april-2022/MarcJacobs_NOTB.jpg"
+					alt=""
+				/>
+			</div>
+			<div onclick="searchPro('newBlock')">
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/19-april-2022/Clarins_NOTB.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+
+		<!-- --------------diary--------------- -->
+		<div id="beautypass">
+			<img
+				src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_7_DESK.jpg"
+				alt=""
+			/>
+		</div>
+
+		<div id="hotgrid">
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/23-march-2022/se-blog/Sephora_MakingaLook_BlogCoverTileOption02.jpg"
+					alt=""
+				/>
+
+				<h4>MAKING A LOOK</h4>
+				<p>With Anaita Shroff Adajania</p>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG3.jpg"
+					alt=""
+				/>
+				<h4>7 MASKS</h4>
+				<p>that'll save your skin</p>
+			</div>
+			<div>
+				<img
+					src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG4.jpg"
+					alt=""
+				/>
+				<h4>LONG LASTING MAKEUP?</h4>
+				<p>Here's how!</p>
+			</div>
+		</div>
+		<!-- ---------btndiv---------- -->
+
+		<div id="btn">
+			<button onclick="scrollToTop()">
+				<i class="fa-solid fa-angle-up"></i> BACK TO TOP
+			</button>
+		</div>
+
+		<!-- -------subscribe div-------- -->
+
+		<div id="subscribe">
+			<h3>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h3>
+			<div id="input_div">
+				<input
+					type="text"
+					name=""
+					id=""
+					placeholder="Enter your email address"
+				/>
+				<button>SUBSCRIBE</button>
+			</div>
+		</div>
+
+		<!-- -----------some texts ------------>
+		<div id="text_Div">
+			<h6>Sephora online India is a trailblazer in the Indian beauty scene</h6>
+			<p>
+				A leader in luxury beauty and skincare, our purpose at Sephora online
+				India is to create an inviting online beauty shopping experience and
+				inspire fearlessness in our community. Since the Sephora India launch in
+				2013, we have been an industry-leading champion of diversity, and
+				empowerment, guided by our longstanding company values.
+			</p>
+
+			<h6>Discover who we are and what we entail only on NNNOW.com</h6>
+			<p>
+				\nOwned by LVMH Moet Hennessy Louis Vuitton, the world's leading luxury
+				goods group, Sephora was founded in France by Dominique Mandonnaud in
+				1970 and is defined by its unique, open-sell environment with an
+				ever-increasing assortment of best-selling lipsticks, eyeliners,
+				foundations, eye palettes and more from carefully curated brands such as
+				Make Up For Ever, Estee Lauder, Benefit Cosmetics, Huda Beauty and many
+				more.
+			</p>
+
+			<h6>
+				Shop Our unrivalled range of Sephora products for a more beautiful you
+			</h6>
+			<p>
+				\nOur array on Sephora NNNOW features trusted classics from Pixi,
+				Elizabeth Arden, Anastasia Beverly Hills, Clinique, Tom Ford, and
+				Sephora’s own, SEPHORA COLLECTION. Today, Sephora India online is a
+				powerful beauty presence in the digital space, thanks to its
+				unparalleled assortment of prestige products in every category, unbiased
+				service from beauty experts, interactive shopping environment, and
+				innovation.
+			</p>
+
+			<p>
+				Through some of our bestsellers such as Sephora lipsticks, Sephora
+				foundations, and other Sephora products, we explore the universe of
+				beauty and wellness with an unbiased approach to experiential retail. We
+				also host expert tutorial videos from our top brands to help you nail
+				the perfect smokey eye or winged eyeliner. Our team of experts in-store
+				also works hard to assure you have a seamless shopping experience with
+				us and helps you define your skin undertones while purchasing the right
+				sephora foundation for you. Sephora continues to give back to
+				communities and advance inclusion in the beauty industry by providing an
+				unrivaled range of shades for Sephora foundations at unbeatable prices.
+			</p>
+
+			<p>
+				Sephora in India also encompasses a formidable range of skincare, bath
+				and body products, haircare, fragrances and perfumes from international
+				brands. Many of our brands such as Botanist and Forest Essentials boast
+				of incorporating only natural ingredients in their products, whereas
+				award-winning such as Natasha Denona, Nudestix, Kora Organics, Aveda,
+				Olaplex, and more promise only SLS/Paraben-free formulas in their range
+				of products. Be sure to also check out our range of cruelty-free brands
+				that include best-selling brands such as Caudalie, Smashbox, Dear
+				Dahlia, Juice Beauty and much more. Sephora online hosts the entire
+				range of makeup and skin products available in Sephora stores in India.
+				Buy Sephora online on NNNOW and be the first to be alerted when we have
+				a major Sephora India sale event coming up!
+			</p>
+
+			<p>Start your Sephora India online shopping on NNNOW.com</p>
+
+			<p>
+				Women can now shop their favorite luxury beauty brands on the Sephora
+				site or via the NNNOW mobile app. Be spoilt for choice with a wide
+				variety of makeup, skincare, haircare, bath and body and fragrances that
+				you can shop from the comfort of your home. Discover online shopping
+				that offers advantages such as Gift With Purchase, freebie sachets, and
+				discount offers on beauty! Buy Sephora online at amazing deals and
+				prices at the click of a button.
+			</p>
+		</div>
+
+		<!-- ---------footer section ---------- -->
+
+		<div id="footer">
+			<!-- -------add footer-------- -->
+		</div>
+	</body>
+</html>
+<script src="./script/index.js"></script>
+<script src="./script/fetch.js"></script>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+
+  import {footer} from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+</script>
+<script src="./script/navscript.js" type="module"></script>
+<script src="./script/sidebar.js"></script>
+<script src="./script/input.js"></script>
